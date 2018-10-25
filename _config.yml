@@ -1,8 +1,8 @@
 # 头部菜单，title: link
 menu:
   Whoami: /whoami
-  Github: https://github.com/Fechin
-  Twitter: https://twitter.com/FechinLi
+  Github: https://github.com/Beacon1096
+  Twitter: https://twitter.com/Beacon1096
 
 # 是否显示目录
 TOC: false
@@ -12,8 +12,8 @@ autoplay: false
 
 # 默认音乐
 mp3: 
-  - http://link.hhtjim.com/163/5146554.mp3
-  - http://link.hhtjim.com/qq/001faIUs4M2zna.mp3
+  - 1.mp3
+  - 2.mp3
 
 # 首页封面图, 为空时取文章的cover作为封面
 welcome_cover: /img/welcome-cover.jpg
