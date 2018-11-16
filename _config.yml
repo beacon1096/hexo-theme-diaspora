@@ -8,7 +8,7 @@ menu:
 TOC: false
 
 # 是否自动播放音乐
-autoplay: false
+autoplay: true
 
 # 默认音乐
 mp3: 
@@ -21,7 +21,7 @@ welcome_cover: /img/welcome-cover.jpg
 cover: /img/cover.jpg
 
 # 是否关闭默认滚动条
-scrollbar: true
+scrollbar: false
 
 # Gitalk 评论插件（https://github.com/gitalk/gitalk）
 #gitalk:
