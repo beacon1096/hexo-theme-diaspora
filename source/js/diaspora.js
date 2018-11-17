@@ -490,6 +490,6 @@ $(function() {
     if (comment.data('ae') == true){
         comment.click();
     }
-    console.log("%c Github %c","background:#24272A; color:#ffffff","","FYT AK IOI!");
+    console.log("%c Beacon1096 %c","background:#24272A; color:#ffffff","","FYT AK IOI!");
 })
 
