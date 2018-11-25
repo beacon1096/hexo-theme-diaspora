@@ -491,9 +491,7 @@ $(function() {
         comment.click();
     }
 
-    console.log("UA:",userAgent);
-    console.log("isIE:",isIE);
-    console.log("isEdge:",isEdge);
     console.log("%c Beacon1096 %c","background:#24272A; color:#ffffff","","FYT AK IOI!");
+    console.log("%c 111.231.224.214 %c","background:#24272A; color:#ffffff","","Jump down the rabbit hole, and follow me on the other side.");
 })
 
