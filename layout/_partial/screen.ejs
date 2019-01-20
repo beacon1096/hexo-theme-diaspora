@@ -1,4 +1,6 @@
 <% var first = site.posts.sort("date", "desc").eq(0); %>
+<%# var encrypted = first.tags["encrypted"]!=0; %>
+<% var encrypted = false; %>
 <div id="screen">
     <div id="mark">
         <div class="layer" data-depth="0.4">
@@ -15,14 +17,54 @@
         <div>
             <a id="header-image-logo" class="image-logo" href="/"></a>
             <script src="/js/beaconCompatCheck.js"></script>
+            <script src="/js/crypto-js.js"></script>
+            <script>
+                function doDecrypt (pwd, onError) {
+                	console.log('in doDecrypt');
+                	const txt = document.getElementById('enc_content').innerHTML;
+                	let plantext;
+                	try {
+                		const bytes = CryptoJS.AES.decrypt(txt, pwd);
+                		var plaintext = bytes.toString(CryptoJS.enc.Utf8);
+                	} catch(err) {
+                		if(onError) {
+                			onError(err);
+                		}
+                		return;
+                	}
+                	document.getElementById('enc_content').innerHTML = plaintext;
+                	document.getElementById('enc_content').style.display = 'block';
+                	document.getElementById('enc_passwd').style.display = 'none';
+                	if(typeof MathJax !== 'undefined') {
+                		MathJax.Hub.Queue(
+                			['resetEquationNumbers', MathJax.InputJax.TeX],
+                			['PreProcess', MathJax.Hub],
+                			['Reprocess', MathJax.Hub]
+                		);
+                	}
+                }
+            </script>
+                           <script> 
+                var onError = function(error) { 
+                    $("#enc_error")[0].innerHTML = "password error!"; 
+                }; 
+                function decrypt() { 
+                    var passwd = $("#enc_passwd input")[0].value; 
+                    console.log(passwd); 
+                    doDecrypt(passwd, onError); 
+                }; 
+            </script>
+            
             <div class="icon-menu switchmenu"></div>
         </div>
     </div>
+    <% var content = "Encrypted"; %>
+    <% if(!encrypted)content = truncate(strip_html(first.content), {length: 60, omission: '...'}); %>
     <% if ( first ) { %>
     <div id="post0">
         <p><%- first.date.locale("zh-cn").format("MMMM DD, YYYY") %></p>
         <h2><%- link_to(url_for(first.path), first.title || config.title, {class: "posttitle"}) %></h2>
-        <p class="summary"><%- truncate(strip_html(first.content), {length: 60, omission: '...'}) %></p>
+        <p class="summary"><%= content %></p>
     </div>
     <% } %>
 </div>
