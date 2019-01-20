@@ -5,7 +5,7 @@
             <span><%- page.date.locale("zh-cn").format("MMMM DD, YYYY") %></span>
             <%- partial('_partial/post/tag', {post: page}) %>
         </div>
-        <div class="content markdown">
+        <div class="content markdown" id="article">
             <%- page.content %>
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="<%- theme.autoplay || "false" %>">

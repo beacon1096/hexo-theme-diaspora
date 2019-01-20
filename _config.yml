@@ -13,7 +13,7 @@ autoplay: true
 # 默认音乐
 mp3: 
 #  - https://beacon1096-github-io-1258087381.cos.ap-chengdu.myqcloud.com/site/default-music.mp3
-   - http://music.163.com/song/media/outer/url?id=28097222
+   - http://music.163.com/song/media/outer/url?id=1332904662
 # 首页封面图, 为空时取文章的cover作为封面
 welcome_cover: https://beacon1096-github-io-1258087381.cos.ap-chengdu.myqcloud.com/site/welcome-cover.jpg
 
@@ -49,7 +49,7 @@ keywords: Beacon1096
 google_analytics: 
 
 # 网站ico
-favicon: /img/favicon.png
+favicon: https://beacon1096-github-io-1258087381.cos.ap-chengdu.myqcloud.com/site/favicon.png
 
 # rss文件
 rss: atom.xml
