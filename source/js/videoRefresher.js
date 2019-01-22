@@ -44,6 +44,6 @@ window.onpagehide=function(){
 window.onhashchange=function(){
     refreshRatio();
 }
-window.onscroll=function(){
-    refreshRatio();
-}
+//window.onscroll=function(){
+//    refreshRatio();
+//}
