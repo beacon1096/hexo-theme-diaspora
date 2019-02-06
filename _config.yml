@@ -1,8 +1,9 @@
 # 头部菜单，title: link
 menu:
-  Whoami: /posts/2018/08/AboutMe/
+  关于我: /posts/2018/08/AboutMe/
   Github: https://github.com/Beacon1096
   Twitter: https://twitter.com/Beacon1096
+  实验中学排练预约(已下线): http://ssyzx-1258087381.cos-website.ap-shanghai.myqcloud.com/
 
 # 是否显示目录
 TOC: false
@@ -14,6 +15,9 @@ autoplay: true
 mp3: 
 #  - https://beacon1096-github-io-1258087381.cos.ap-chengdu.myqcloud.com/site/default-music.mp3
    - http://music.163.com/song/media/outer/url?id=1332904662
+   - http://music.163.com/song/media/outer/url?id=456185161
+   - http://music.163.com/song/media/outer/url?id=546730054
+   - http://music.163.com/song/media/outer/url?id=507116551
 # 首页封面图, 为空时取文章的cover作为封面
 welcome_cover: https://beacon1096-github-io-1258087381.cos.ap-chengdu.myqcloud.com/site/welcome-cover.jpg
 
