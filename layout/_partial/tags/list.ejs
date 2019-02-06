@@ -1,0 +1,13 @@
+<%
+    function postFilter(post) {
+        return _.findIndex(post.tags,function o(t){
+            return t==tag;
+        })==-1;
+    }
+    var allPosts = page.posts.sort("date", "desc");
+    var selectedPosts = allPosts.filter(postFilter);
+
+    selectedPosts.each(function(post, i){
+%>
+<%- partial('../post/item', {post: post}) %>
+<% }) %>

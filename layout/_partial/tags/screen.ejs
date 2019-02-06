@@ -17,14 +17,10 @@
             <div class="icon-menu switchmenu"></div>
         </div>
     </div>
-    <% if ( first ) { %>
-    <div id="post0">
-        <% var encrypted = first.password!=undefined; %>
-        <% var content = "Encrypted"; %>
-        <% if(!encrypted)content = truncate(strip_html(first.content), {length: 60, omission: '...'}); %>
-        <p><%- first.date.locale("zh-cn").format("MMMM DD, YYYY") %></p>
-        <h2><%- link_to(url_for(first.path), first.title || config.title, {class: "posttitle"}) %></h2>
-        <p class="summary"><%- content %></p>
-    </div>
-    <% } %>
+        <div id="post0">
+            <h2>
+            <a class="posttitle" style="font-size:40px">Tag: <%- title %></a>
+            </h2>
+            <p class="summary">所有关于 <%- title%> 标签的文章都在这里了。</p>
+        </div>
 </div>
