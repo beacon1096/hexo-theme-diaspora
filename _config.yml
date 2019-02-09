@@ -19,10 +19,10 @@ mp3:
    - http://music.163.com/song/media/outer/url?id=546730054
    - http://music.163.com/song/media/outer/url?id=507116551
 # 首页封面图, 为空时取文章的cover作为封面
-welcome_cover: https://beacon1096-github-io-1258087381.cos.ap-chengdu.myqcloud.com/site/welcome-cover.jpg
+welcome_cover: https://beacon1096-github-io-1258087381.cos.ap-chengdu.myqcloud.com/site/img/welcome-cover.jpg
 
 # 默认文章封面图
-cover: https://beacon1096-github-io-1258087381.cos.ap-chengdu.myqcloud.com/site/default-cover.jpg
+cover: https://beacon1096-github-io-1258087381.cos.ap-chengdu.myqcloud.com/site/img/default-cover.jpg
 
 # 是否关闭默认滚动条
 scrollbar: false
