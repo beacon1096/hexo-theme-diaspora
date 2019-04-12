@@ -1,0 +1,53 @@
+<div id=beaconHosted>
+    <div id="Falty Sparkle" style="line-height: 2">
+        <p class="beaconText" style="margin-top: 30px">当前已经进入队列的班级/社团有：</p>
+        <p class="beaconText" id="list" style='white-space:pre;'><i>此部分内容应当由此页面自动更新。如果你看到这段文字，请联系高二(1)班张博城。</i></p>
+        <p class="beaconText">现在开始排队，你可以在以下时间开始排练:</p>
+        <p class="beaconText" id="time"><i>此部分内容应当由此页面自动更新。如果你看到这段文字，请联系高二(1)班张博城。</i></p>
+        <button id="updateButton" style="margin-left: 10%">点击以刷新页面信息</button>
+        <hr style="margin-top: 20px;margin-bottom: 20px"/>
+        <p class="beaconText" >取号排队前请阅读须知以及如下通知:</p>
+        <p class="beaconText" id="PSA" style="margin-top: 10px;"><i>此部分内容应当由此页面自动更新。如果你看到这段文字，请联系高二(1)班张博城。</i></p>
+        <hr style="margin-top: 20px;margin-bottom: 20px"/>
+        <p class="beaconText" >当前设定的单场排练时长为:</p>
+        <p class="beaconText" id="timeSchedule" style="margin-top: 10px;"><i>此部分内容应当由此页面自动更新。如果你看到这段文字，请联系高二(1)班张博城。</i></p>
+        <hr style="margin-top: 20px;margin-bottom: 20px"/>
+        <p class="beaconText">班级取号:</p>
+        <div id="classRegister" style="margin-left: 10%">
+            年级:<select id="gradeTarget" >
+                <option value="1">高一</option>
+                <option value="2">高二</option>
+                <option value="3">高三</option>
+            </select>
+            班级:<select id="classTarget" >
+                <option value="1"> 一班</option>
+                <option value="2"> 二班</option>
+                <option value="3"> 三班</option>
+                <option value="4"> 四班</option>
+                <option value="5"> 五班</option>
+                <option value="6"> 六班</option>
+                <option value="7"> 七班</option>
+                <option value="8"> 八班</option>
+                <option value="9"> 九班</option>
+                <option value="10"> 十班</option>
+                <option value="11"> 十一班</option>
+                <option value="12"> 十二班</option>
+                <option id="c13" value="13">十三班</option>
+            </select>
+            <button type="button" id="submitButton">加入队列</button>
+        </div>
+        <hr style="margin-top: 20px;margin-bottom: 20px"/>
+		<p class="beaconText">社团取号:</p>
+		<div id="clubRegister" style="margin-left: 10%">
+        <input class="beaconInput" id="clubTarget" type="text">
+        <button type="button" id="clubButton">加入队列</button>
+		</div>
+		<hr style="margin-top: 20px;margin-bottom: 20px"/>
+        <p class="beaconText">服务器版本:</p>
+        <p class="beaconText" id="serverVersion"><i>此部分内容应当由网页自动更新。如果你看到这段文字，请联系高二(1)班张博城。</i></p>
+        <p class="beaconText">POAPI.js版本:</p>
+        <p class="beaconText" id="poapiVersion"><i>此部分内容应当由网页自动更新。如果你看到这段文字，请联系高二(1)班张博城。</i></p>
+		<p class="beaconText">以下信息不一定对于所有用户都具有参考性。仅用于临时调试。</p>
+		<button type="button" id="UAChecker" style="margin-left: 10%;margin-bottom: 20px">检测UA</button>
+    </div>
+</div>
