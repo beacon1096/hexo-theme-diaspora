@@ -1,10 +1,1 @@
-<%- partial('archive', {pagination: config.tag, index: true}) %>
-<%- partial("_partial/menu", null, {cache: true}) %>
-<div id="container">
-    <%- partial("_partial/tags/screen", {title: page.tag}) %>
-    <div id="primary">
-        <%- partial('_partial/tags/list', {tag: page.tag, start:0}) %>
-    </div>
-</div>
-<div id="preview"></div>
-
+<%- partial('index', {pagination: config.tag, index: false}) %>
