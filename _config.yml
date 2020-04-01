@@ -11,7 +11,7 @@ TOC: false
 # 是否自动播放音乐
 autoplay: true
 
-# 默认音乐
+# 默认音乐（随机播放）
 mp3: 
 #  - https://beacon1096-github-io-1258087381.cos.ap-chengdu.myqcloud.com/site/default-music.mp3
    - http://music.163.com/song/media/outer/url?id=1332904662
@@ -24,8 +24,37 @@ welcome_cover: https://beacon1096-github-io-1258087381.cos.ap-chengdu.myqcloud.c
 # 默认文章封面图
 cover: https://beacon1096-github-io-1258087381.cos.ap-chengdu.myqcloud.com/site/img/default-cover.jpg
 
+mathjax: false
+
 # 是否关闭默认滚动条
 scrollbar: false
+
+# 本地搜索,请将索引文件放在网站根目录,或修改主题js文件的path值
+local_search:
+    # 是否启用
+    enable: false
+
+# 是否显示 一言(hitokoto)
+hitokoto: true
+
+# 链接(可选:facebook,twitter,github,wechat,email)
+links:
+    facebook: /
+    twitter: /
+    github: /
+    wechat: /img/logo.png
+    email: mailto:xxxx@gmail.com
+  
+# 备案
+beian: 
+    # 是否显示备案信息
+    enable: true
+    # 是否在主页面最底下显示备案信息(虽然丑，但是完全满足规定要求)
+    enableFooter: false
+    # 备案号
+    beianInfo: 冀ICP备xxxxxxx号
+    # 链接地址
+    link: http://www.beian.miit.gov.cn
 
 # Gitalk 评论插件（https://github.com/gitalk/gitalk）
 #gitalk:
