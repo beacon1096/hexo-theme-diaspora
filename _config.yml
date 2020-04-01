@@ -3,7 +3,7 @@ menu:
   关于我: /posts/2018/08/AboutMe/
   Github: https://github.com/Beacon1096
   Twitter: https://twitter.com/Beacon1096
-  实验中学排练预约(已下线): http://ssyzx-1258087381.cos-website.ap-shanghai.myqcloud.com/
+#  实验中学排练预约(已下线): http://ssyzx-1258087381.cos-website.ap-shanghai.myqcloud.com/
 
 # 是否显示目录
 TOC: false
@@ -39,25 +39,19 @@ hitokoto: true
 
 # 链接(可选:facebook,twitter,github,wechat,email)
 links:
-    facebook: /
-    twitter: /
-    github: /
-    wechat: /img/logo.png
-    email: mailto:xxxx@gmail.com
-  
-# 备案
+#    facebook: /
+#    twitter: /
+#    github: /
+#    wechat: /img/logo.png
+    email: mailto:beacon1096@beacoworks.xyz
+    
 beian: 
     # 是否显示备案信息
-    enable: true
-    # 是否在主页面最底下显示备案信息(虽然丑，但是完全满足规定要求)
-    enableFooter: false
-    # 备案号
-    beianInfo: 冀ICP备xxxxxxx号
-    # 链接地址
-    link: http://www.beian.miit.gov.cn
+    enable: false
 
 # Gitalk 评论插件（https://github.com/gitalk/gitalk）
-#gitalk:
+gitalk:
+    enable: false
     # 是否自动展开评论框
 #    autoExpand: false
     # 应用编号
