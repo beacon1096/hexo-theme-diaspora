@@ -13,7 +13,10 @@
             </audio>
             <% if (page.mp3 != null){%>
                 <ul id="audio-list" style="display:none">
-                    <% for(var i in page.mp3){ %>
+                    <% if(typeof page.mp3 === String){ %>
+                        <li title='0' data-url='<%- page.mp3 %>'></li> 
+                    <%}%>
+                    <% if(typeof page.mp3 !== String) for(var i in page.mp3){ %>
                         <li title='<%- i %>' data-url='<%- page.mp3[i] %>'></li>
                     <%}%>
                 </ul>
