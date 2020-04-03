@@ -1,4 +1,4 @@
-<% if (theme.gitalk != undefined){ %>
+<% if (theme.gitalk != undefined && theme.gitalk.enable != false){ %>
     <div id='gitalk-container' class="comment link"
 		data-enable='<%=theme.gitalk.enable%>'
         data-ae='<%=theme.gitalk.autoExpand%>'
