@@ -2,6 +2,7 @@ var Home = location.href,
     Pages = 4,
     xhr,
     xhrUrl = '';
+var musicPlayed = false;
 
 var Diaspora = {
     L: function(url, f, err) {
@@ -154,17 +155,20 @@ var Diaspora = {
             'timeupdate': function() {
                 var progress = p[0].currentTime / p[0].duration * 100;
                 $('.bar').css('width', progress + '%');
-                if (progress / 5 <= 1) {
+                if (progress / 5 <= 1 && !musicPlayed) {
                     p[0].volume = progress / 5;
                 }else {
                     p[0].volume = 1;
+                    musicPlayed = true;
                 }
             },
             'ended': function() {
+                musicPlayed = true;
                 $('.icon-pause').removeClass('icon-pause').addClass('icon-play')
                 audiolist = $('#audio-list li');
                 var mp3 = audiolist.eq([Math.floor(Math.random() * audiolist.size())]);
-                while(p[0].src === mp3.data('url')){
+                
+                while(p[0].src === mp3.data('url') && audiolist.size()!=1){
                     mp3 = audiolist.eq([Math.floor(Math.random() * audiolist.size())]);
                 }
                 p[0].src = mp3.data('url');
